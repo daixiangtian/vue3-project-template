@@ -1,0 +1,45 @@
+{
+  "name": "tm-vue3-typescript-template",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write .",
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "husky install"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,vue,ts,jsx,tsx}": [
+      "npm run lint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "dart-sass": "^1.25.0",
+    "pinia": "^2.0.33",
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.13"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.8",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.4",
+    "sass": "^1.54.3",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.9",
+    "vite-plugin-require-transform": "^1.0.3",
+    "vue-tsc": "^0.35.0"
+  }
+}

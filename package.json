@@ -1,8 +1,8 @@
 {
-  "name": "{{name}}",
+  "name": "{{ name }}",
   "version": "0.0.1",
-  "author": "{{author}}",
-  "description":"{{description}}",
+  "author": "{{ author }}",
+  "description":"{{ description }}",
   "scripts": {
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "precommit": "lint-staged",
